@@ -1,1 +1,4 @@
-# SimulacionPorComputadora-KatiaSalcedo
+# Simulación Por Computadora
+
+KatiaSalcedo
+Prácticas de Clase
