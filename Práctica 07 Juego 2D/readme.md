@@ -2,9 +2,9 @@
 
 Objetivos:
 
-      Conocer un motor grafico para el desarrollo de aplicaciones interactivas.
-      Crear una aplicación  integrativa 2d
-      Fomentar el aprendizaje autodirigido al interactuar con ChatGPT.
+      - Conocer un motor grafico para el desarrollo de aplicaciones interactivas.
+      - Crear una aplicación  integrativa 2d
+      - Fomentar el aprendizaje autodirigido al interactuar con ChatGPT.
 
 ![P-7-3](https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/0da90c4a-4815-4262-9d58-4ffb23c03b49)
 
