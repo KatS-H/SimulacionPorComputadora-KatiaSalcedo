@@ -1,0 +1,2 @@
+4 frame animation
+Size 32 x 32 px
