@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/Final.gd" type="Script" id=1]
+=======
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 [ext_resource path="res://Cake_Pack_Sprites/final.png" type="Texture" id=2]
 [ext_resource path="res://Cake_Pack_Sprites/boton.png" type="Texture" id=3]
 [ext_resource path="res://Cake_Pack_Sprites/boton..png" type="Texture" id=4]
@@ -8,9 +14,14 @@
 [ext_resource path="res://Cake_Pack_Sprites/salir-pressed.png" type="Texture" id=6]
 [ext_resource path="res://Cake_Pack_Sprites/salir.png" type="Texture" id=7]
 [ext_resource path="res://Cake_Pack_Sprites/salir-hover.png" type="Texture" id=8]
+<<<<<<< HEAD
 [ext_resource path="res://Cake_Pack_Sprites/Sonidos/midi madness 1/BONUS themey Remastered.wav" type="AudioStream" id=9]
 
 [node name="Final" type="Control"]
+=======
+
+[node name="Menu" type="Control"]
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -51,8 +62,11 @@ texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 8 )
 
+<<<<<<< HEAD
 [node name="FinalSonido" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
 
+=======
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
