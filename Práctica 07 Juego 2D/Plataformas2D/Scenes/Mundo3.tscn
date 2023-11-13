@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=59 format=2]
+=======
+[gd_scene load_steps=57 format=2]
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 =======
 [gd_scene load_steps=57 format=2]
 >>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
@@ -25,9 +29,13 @@
 [ext_resource path="res://Scenes/Saw.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=20]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource path="res://Scripts/Mundo3.gd" type="Script" id=21]
 [ext_resource path="res://Scenes/PauseMenu.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Cake_Pack_Sprites/Sonidos/midi madness 1/chill (sonatina-midi-madness).wav" type="AudioStream" id=23]
+=======
+[ext_resource path="res://Scenes/PauseMenu.tscn" type="PackedScene" id=22]
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 =======
 [ext_resource path="res://Scenes/PauseMenu.tscn" type="PackedScene" id=22]
 >>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
@@ -1148,7 +1156,10 @@ extents = Vector2( 388.75, 20.25 )
 [node name="Mundo3" type="Node2D"]
 position = Vector2( -79, -245 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 script = ExtResource( 21 )
+=======
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 =======
 >>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 
@@ -1347,9 +1358,12 @@ position = Vector2( 263, 178 )
 position = Vector2( -121, -41 )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [node name="Mundo3Sonido" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 23 )
 
+=======
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 =======
 >>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 [connection signal="body_entered" from="CambioNivel3" to="CambioNivel3" method="_on_CambioNivel3_body_entered"]

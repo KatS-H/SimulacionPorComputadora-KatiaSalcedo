@@ -3,7 +3,10 @@ extends Area2D
 signal coin_collected
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 =======
 >>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 func _on_Coin2D_body_entered(body):
@@ -11,6 +14,10 @@ func _on_Coin2D_body_entered(body):
 		body.add_Coin()
 		queue_free()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
 =======
 		
 >>>>>>> 09d1f82bcd0ac13e4d15ad4abaf5f6d4c6421ac3
