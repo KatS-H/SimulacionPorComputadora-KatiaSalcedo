@@ -13,5 +13,6 @@ Objetivos:
 ![P-7-2](https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/7600c1f5-d659-40de-9b7e-dd27edfbaba8)
 
 
-https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/9b4a7c62-e85b-41fe-b6ad-4617a0a106dc
+
+https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/efb98614-2385-4105-ae7a-36191085e96c
 
