@@ -6,12 +6,12 @@ Objetivos:
       - Crear una aplicación  integrativa 2d
       - Fomentar el aprendizaje autodirigido al interactuar con ChatGPT.
 
-![P-7-3](https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/0da90c4a-4815-4262-9d58-4ffb23c03b49)
 
-![P-7-1](https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/2e30aa6f-70a3-4a47-bdc6-ff85bf08ed72)
+![captura1](https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/17442a88-85f6-4673-b5ee-7cb054243910)
 
-![P-7-2](https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/7600c1f5-d659-40de-9b7e-dd27edfbaba8)
+![captura2](https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/b4df88af-aa70-415a-b607-5b09f5f7e2ec)
 
+![captura3](https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/ebc7986f-e3d3-4fdd-8d83-eeb1febc0785)
 
 
 https://github.com/KatS-H/SimulacionPorComputadora-KatiaSalcedo/assets/117952488/efb98614-2385-4105-ae7a-36191085e96c
