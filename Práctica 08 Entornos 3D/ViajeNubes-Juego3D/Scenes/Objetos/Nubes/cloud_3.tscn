@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cttxydyppal4m"]
+
+[ext_resource type="PackedScene" uid="uid://dc04ooeootd2n" path="res://Assets/Objetos/Nubes/Cloud3.fbx" id="1_23q3k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mre0t"]
+transparency = 1
+distance_fade_mode = 1
+distance_fade_min_distance = 2.0
+distance_fade_max_distance = 3.0
+
+[node name="Cloud3" instance=ExtResource("1_23q3k")]
+
+[node name="Icosphere" parent="RootNode" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_mre0t")

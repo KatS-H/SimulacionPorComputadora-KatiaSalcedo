@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bphx28ay6tn4o"]
+
+[ext_resource type="PackedScene" uid="uid://bpkt84c4vryps" path="res://Assets/Objetos/Nubes/Cloud7.fbx" id="1_i6wh5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3lpvb"]
+transparency = 1
+distance_fade_mode = 1
+distance_fade_min_distance = 2.0
+distance_fade_max_distance = 3.0
+
+[node name="Cloud7" instance=ExtResource("1_i6wh5")]
+
+[node name="Icosphere_001" parent="RootNode" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_3lpvb")

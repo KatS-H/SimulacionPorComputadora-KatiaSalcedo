@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://pa5ot365330i"]
+
+[ext_resource type="ArrayMesh" uid="uid://ctptlfkwkdct4" path="res://Assets/Objetos/Plataformas/Platforms-Meshes/Prop_Bridge_Narrow.obj" id="1_qvl04"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ex7n2"]
+size = Vector3(1, 0.162117, 1.97873)
+
+[node name="platform-small" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_qvl04")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.144897, 0)
+shape = SubResource("BoxShape3D_ex7n2")

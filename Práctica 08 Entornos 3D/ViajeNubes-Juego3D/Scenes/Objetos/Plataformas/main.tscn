@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=3 uid="uid://c6b220707n7lt"]
+
+[ext_resource type="Texture2D" uid="uid://6btichi2e7nl" path="res://Assets/Sprites/inicio.png" id="1_h6xoj"]
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_y6olb"]
+[ext_resource type="Texture2D" uid="uid://c7q4qs14vkgco" path="res://Assets/Sprites/Playy.png" id="2_ntg27"]
+[ext_resource type="PackedScene" uid="uid://ba43tdudc1spe" path="res://Scenes/level_1.tscn" id="2_ta1yx"]
+[ext_resource type="Texture2D" uid="uid://lq2prfs1svb0" path="res://Assets/Sprites/Play.png" id="3_em47f"]
+[ext_resource type="Texture2D" uid="uid://bx2vteo1dx30i" path="res://Assets/Sprites/Exitt.png" id="4_82fyw"]
+[ext_resource type="Texture2D" uid="uid://tfgmjwt4p3yi" path="res://Assets/Sprites/Exit.png" id="5_353gs"]
+[ext_resource type="AudioStream" uid="uid://bjo61e6fiobpr" path="res://Assets/Sonidos/bounce lullabye.wav" id="8_t2om6"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y6olb")
+next_scene = ExtResource("2_ta1yx")
+
+[node name="Inicio" type="Sprite2D" parent="."]
+position = Vector2(578, 327)
+scale = Vector2(0.87, 0.87)
+texture = ExtResource("1_h6xoj")
+
+[node name="Start" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 349.0
+offset_top = 397.0
+offset_right = 425.0
+offset_bottom = 448.0
+size_flags_horizontal = 4
+texture_normal = ExtResource("2_ntg27")
+texture_pressed = ExtResource("3_em47f")
+texture_hover = ExtResource("3_em47f")
+
+[node name="Quit" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 760.0
+offset_top = 397.0
+offset_right = 836.0
+offset_bottom = 448.0
+size_flags_horizontal = 4
+texture_normal = ExtResource("4_82fyw")
+texture_pressed = ExtResource("5_353gs")
+texture_hover = ExtResource("5_353gs")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_t2om6")
+autoplay = true
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

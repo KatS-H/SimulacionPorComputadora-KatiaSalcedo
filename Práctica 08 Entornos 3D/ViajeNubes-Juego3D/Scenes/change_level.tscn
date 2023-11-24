@@ -1,0 +1,51 @@
+[gd_scene load_steps=10 format=3 uid="uid://b1ltt4n1c8ei6"]
+
+[ext_resource type="Script" path="res://Scripts/change_level.gd" id="1_1xuk5"]
+[ext_resource type="ArrayMesh" uid="uid://bjedwo1cst7yv" path="res://Assets/Objetos/Plataformas/Platforms-Meshes/Prop_Block_Play.obj" id="1_l4ba3"]
+[ext_resource type="Texture2D" uid="uid://bs6puxrivhkk2" path="res://Assets/Sprites/particle.png" id="2_n5w3e"]
+[ext_resource type="PackedScene" uid="uid://bwemt0i4drsj8" path="res://Scenes/final.tscn" id="2_oxiye"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p77jq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_71ymj"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_n5w3e")
+
+[sub_resource type="QuadMesh" id="QuadMesh_mafbe"]
+
+[sub_resource type="Curve" id="Curve_lncir"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.504, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_boph2"]
+colors = PackedColorArray(0.419608, 0.976471, 0.12549, 1, 1, 1, 1, 1)
+
+[node name="ChangeLevel" type="Area3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+script = ExtResource("1_1xuk5")
+next_scene = ExtResource("2_oxiye")
+
+[node name="Block" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_l4ba3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.491691, 0)
+shape = SubResource("BoxShape3D_p77jq")
+
+[node name="Particles" type="CPUParticles3D" parent="."]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_71ymj")
+mesh = SubResource("QuadMesh_mafbe")
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_max = 2.0
+damping_min = 0.3
+damping_max = 0.3
+scale_amount_min = 0.3
+scale_amount_max = 0.3
+scale_amount_curve = SubResource("Curve_lncir")
+color = Color(0.196078, 0.85098, 0.14902, 1)
+color_ramp = SubResource("Gradient_boph2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

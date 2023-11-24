@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bjedwo1cst7yv"
+path="res://.godot/imported/Prop_Block_Play.obj-d7a1cbffe79c164228c550b80f2184b0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Block_Play.obj-d7a1cbffe79c164228c550b80f2184b0.mesh"]
+
+source_file="res://Assets/Objetos/Plataformas/Platforms-Meshes/Prop_Block_Play.obj"
+dest_files=["res://.godot/imported/Prop_Block_Play.obj-d7a1cbffe79c164228c550b80f2184b0.mesh", "res://.godot/imported/Prop_Block_Play.obj-d7a1cbffe79c164228c550b80f2184b0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,6 @@
+extends Control
+
+@onready var musicPlayer = $Music
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	musicPlayer.play()

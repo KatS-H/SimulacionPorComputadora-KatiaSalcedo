@@ -1,0 +1,54 @@
+[gd_scene load_steps=11 format=3 uid="uid://kl6vj3m0rtv6"]
+
+[ext_resource type="Script" path="res://Scripts/bridge_falling.gd" id="1_hr74k"]
+[ext_resource type="ArrayMesh" uid="uid://ctptlfkwkdct4" path="res://Assets/Objetos/Plataformas/Platforms-Meshes/Prop_Bridge_Narrow.obj" id="1_qbumm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7khd"]
+albedo_color = Color(0.556863, 0.341176, 0.137255, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_87sod"]
+albedo_color = Color(0.556863, 0.341176, 0.137255, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hspk5"]
+albedo_color = Color(0.556863, 0.341176, 0.137255, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5alda"]
+albedo_color = Color(0.556863, 0.341176, 0.137255, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ne35"]
+albedo_color = Color(0.556863, 0.341176, 0.137255, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x70s2"]
+albedo_color = Color(0.556863, 0.341176, 0.137255, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_65a5y"]
+size = Vector3(0.914118, 0.18041, 2.01361)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ymghq"]
+size = Vector3(0.849671, 0.0611952, 2.01943)
+
+[node name="bridge-falling" type="Node3D"]
+script = ExtResource("1_hr74k")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_qbumm")
+surface_material_override/0 = SubResource("StandardMaterial3D_s7khd")
+surface_material_override/1 = SubResource("StandardMaterial3D_87sod")
+surface_material_override/2 = SubResource("StandardMaterial3D_hspk5")
+surface_material_override/3 = SubResource("StandardMaterial3D_5alda")
+surface_material_override/4 = SubResource("StandardMaterial3D_3ne35")
+surface_material_override/5 = SubResource("StandardMaterial3D_x70s2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000446081, -0.151311, 0)
+shape = SubResource("BoxShape3D_65a5y")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0144411, 0)
+shape = SubResource("BoxShape3D_ymghq")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_body_entered"]

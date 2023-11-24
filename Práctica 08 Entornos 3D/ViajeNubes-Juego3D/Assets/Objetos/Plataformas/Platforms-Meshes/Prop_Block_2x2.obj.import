@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://h8nbd6empd8h"
+path="res://.godot/imported/Prop_Block_2x2.obj-cc97594bdd906fc5d0989292e0b9375c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Block_2x2.obj-cc97594bdd906fc5d0989292e0b9375c.mesh"]
+
+source_file="res://Assets/Objetos/Plataformas/Platforms-Meshes/Prop_Block_2x2.obj"
+dest_files=["res://.godot/imported/Prop_Block_2x2.obj-cc97594bdd906fc5d0989292e0b9375c.mesh", "res://.godot/imported/Prop_Block_2x2.obj-cc97594bdd906fc5d0989292e0b9375c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
